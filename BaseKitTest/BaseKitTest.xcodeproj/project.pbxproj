@@ -20,6 +20,7 @@
 		808B2A7D214F88D300A9A13B /* SCAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 808B2A7C214F88D300A9A13B /* SCAViewController.m */; };
 		808B2A80214F891700A9A13B /* SCBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 808B2A7F214F891700A9A13B /* SCBaseNavigationController.m */; };
 		808B2A83214F8A8C00A9A13B /* SCBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 808B2A82214F8A8C00A9A13B /* SCBViewController.m */; };
+		809D5E3A2151E8EE00AE55E9 /* SCBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 809D5E392151E8EE00AE55E9 /* SCBaseTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,8 @@
 		808B2A7F214F891700A9A13B /* SCBaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCBaseNavigationController.m; sourceTree = "<group>"; };
 		808B2A81214F8A8C00A9A13B /* SCBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCBViewController.h; sourceTree = "<group>"; };
 		808B2A82214F8A8C00A9A13B /* SCBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCBViewController.m; sourceTree = "<group>"; };
+		809D5E382151E8EE00AE55E9 /* SCBaseTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCBaseTableView.h; sourceTree = "<group>"; };
+		809D5E392151E8EE00AE55E9 /* SCBaseTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCBaseTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				808B2A7F214F891700A9A13B /* SCBaseNavigationController.m */,
 				807AA2042150CDE0003050BA /* SCBaseTabBarViewController.h */,
 				807AA2052150CDE0003050BA /* SCBaseTabBarViewController.m */,
+				809D5E382151E8EE00AE55E9 /* SCBaseTableView.h */,
+				809D5E392151E8EE00AE55E9 /* SCBaseTableView.m */,
 			);
 			path = BaseKit;
 			sourceTree = "<group>";
@@ -189,6 +194,7 @@
 				807AA2032150CAC7003050BA /* SCCViewController.m in Sources */,
 				807AA2092150DC9C003050BA /* SCTabViewController.m in Sources */,
 				808B2A83214F8A8C00A9A13B /* SCBViewController.m in Sources */,
+				809D5E3A2151E8EE00AE55E9 /* SCBaseTableView.m in Sources */,
 				807AA2062150CDE0003050BA /* SCBaseTabBarViewController.m in Sources */,
 				808B2A80214F891700A9A13B /* SCBaseNavigationController.m in Sources */,
 				808B2A71214F772600A9A13B /* main.m in Sources */,
