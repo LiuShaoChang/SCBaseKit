@@ -10,28 +10,29 @@
 
 @implementation SCBaseTableView
 
-- (void)registerNibsWithCellReuseIdentifiers:(NSDictionary<nibNamed, cellReuseIdentifier> *)registParameters {
-    for (NSString *nibName in registParameters.allKeys) {
-        [self registerNib:[UINib nibWithNibName:nibName bundle:nil] forCellReuseIdentifier:registParameters[nibName]];
+- (void)registerNibsWithCellReuseIdentifiers:(NSDictionary<reuseIdentifier, nibNamed> *)registParameters {
+    for (NSString *identifier in registParameters.allKeys) {
+        [self registerNib:[UINib nibWithNibName:registParameters[identifier] bundle:nil] forCellReuseIdentifier:identifier];
     }
 }
-- (void)registerClassesWithCellReuseIdentifiers:(NSDictionary<classNamed, cellReuseIdentifier> *)registParameters {
-    for (NSString *className in registParameters.allKeys) {
-        [self registerClass:NSClassFromString(className) forCellReuseIdentifier:registParameters[className]];
-    }
-}
-
-- (void)registerNibsWithHeaderFooterViewReuseIdentifiers:(NSDictionary<nibNamed, cellReuseIdentifier> *)registParameters {
-    for (NSString *nibName in registParameters.allKeys) {
-        [self registerNib:[UINib nibWithNibName:nibName bundle:nil] forHeaderFooterViewReuseIdentifier:registParameters[nibName]];
+- (void)registerClassesWithCellReuseIdentifiers:(NSDictionary<reuseIdentifier, classNamed> *)registParameters {
+    for (NSString *identifier in registParameters.allKeys) {
+        [self registerClass:NSClassFromString(registParameters[identifier]) forCellReuseIdentifier:identifier];
     }
 }
 
-- (void)registerClassesWithHeaderFooterViewReuseIdentifiers:(NSDictionary<classNamed, cellReuseIdentifier> *)registParameters {
-    for (NSString *className in registParameters.allKeys) {
-        [self registerClass:NSClassFromString(className) forHeaderFooterViewReuseIdentifier:registParameters[className]];
+- (void)registerNibsWithHeaderFooterViewReuseIdentifiers:(NSDictionary<reuseIdentifier, nibNamed> *)registParameters {
+    for (NSString *identifier in registParameters.allKeys) {
+        [self registerNib:[UINib nibWithNibName:registParameters[identifier] bundle:nil] forHeaderFooterViewReuseIdentifier:identifier];
     }
 }
+- (void)registerClassesWithHeaderFooterViewReuseIdentifiers:(NSDictionary<reuseIdentifier, classNamed> *)registParameters {
+    for (NSString *identifier in registParameters.allKeys) {
+        [self registerClass:NSClassFromString(registParameters[identifier]) forHeaderFooterViewReuseIdentifier:identifier];
+    }
+}
+
+
 
 /*
 // Only override drawRect: if you perform custom drawing.

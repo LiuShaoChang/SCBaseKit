@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		802AB45921532AA50027353D /* SCBaseDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 802AB45821532AA50027353D /* SCBaseDataSource.m */; };
+		802AB45D21536B520027353D /* SCACell.m in Sources */ = {isa = PBXBuildFile; fileRef = 802AB45B21536B520027353D /* SCACell.m */; };
+		802AB45E21536B520027353D /* SCACell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 802AB45C21536B520027353D /* SCACell.xib */; };
+		802AB46221536BAE0027353D /* SCBCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 802AB46021536BAE0027353D /* SCBCell.m */; };
+		802AB46321536BAE0027353D /* SCBCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 802AB46121536BAE0027353D /* SCBCell.xib */; };
 		807AA2032150CAC7003050BA /* SCCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 807AA2022150CAC7003050BA /* SCCViewController.m */; };
 		807AA2062150CDE0003050BA /* SCBaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 807AA2052150CDE0003050BA /* SCBaseTabBarViewController.m */; };
 		807AA2092150DC9C003050BA /* SCTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 807AA2082150DC9C003050BA /* SCTabViewController.m */; };
@@ -24,6 +29,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		802AB45721532AA50027353D /* SCBaseDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCBaseDataSource.h; sourceTree = "<group>"; };
+		802AB45821532AA50027353D /* SCBaseDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCBaseDataSource.m; sourceTree = "<group>"; };
+		802AB45A21536B520027353D /* SCACell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCACell.h; sourceTree = "<group>"; };
+		802AB45B21536B520027353D /* SCACell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCACell.m; sourceTree = "<group>"; };
+		802AB45C21536B520027353D /* SCACell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCACell.xib; sourceTree = "<group>"; };
+		802AB45F21536BAE0027353D /* SCBCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCBCell.h; sourceTree = "<group>"; };
+		802AB46021536BAE0027353D /* SCBCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCBCell.m; sourceTree = "<group>"; };
+		802AB46121536BAE0027353D /* SCBCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCBCell.xib; sourceTree = "<group>"; };
 		807AA2012150CAC7003050BA /* SCCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCViewController.h; sourceTree = "<group>"; };
 		807AA2022150CAC7003050BA /* SCCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCViewController.m; sourceTree = "<group>"; };
 		807AA2042150CDE0003050BA /* SCBaseTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCBaseTabBarViewController.h; sourceTree = "<group>"; };
@@ -92,6 +105,12 @@
 				807AA2022150CAC7003050BA /* SCCViewController.m */,
 				807AA20A2150DE49003050BA /* SCDViewController.h */,
 				807AA20B2150DE49003050BA /* SCDViewController.m */,
+				802AB45A21536B520027353D /* SCACell.h */,
+				802AB45B21536B520027353D /* SCACell.m */,
+				802AB45C21536B520027353D /* SCACell.xib */,
+				802AB45F21536BAE0027353D /* SCBCell.h */,
+				802AB46021536BAE0027353D /* SCBCell.m */,
+				802AB46121536BAE0027353D /* SCBCell.xib */,
 				807AA2072150DC9C003050BA /* SCTabViewController.h */,
 				807AA2082150DC9C003050BA /* SCTabViewController.m */,
 				808B2A77214F776D00A9A13B /* BaseKit */,
@@ -115,6 +134,8 @@
 				807AA2052150CDE0003050BA /* SCBaseTabBarViewController.m */,
 				809D5E382151E8EE00AE55E9 /* SCBaseTableView.h */,
 				809D5E392151E8EE00AE55E9 /* SCBaseTableView.m */,
+				802AB45721532AA50027353D /* SCBaseDataSource.h */,
+				802AB45821532AA50027353D /* SCBaseDataSource.m */,
 			);
 			path = BaseKit;
 			sourceTree = "<group>";
@@ -179,7 +200,9 @@
 			files = (
 				808B2A6E214F772600A9A13B /* LaunchScreen.storyboard in Resources */,
 				808B2A6B214F772600A9A13B /* Assets.xcassets in Resources */,
+				802AB46321536BAE0027353D /* SCBCell.xib in Resources */,
 				808B2A69214F772400A9A13B /* Main.storyboard in Resources */,
+				802AB45E21536B520027353D /* SCACell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,9 +218,12 @@
 				807AA2092150DC9C003050BA /* SCTabViewController.m in Sources */,
 				808B2A83214F8A8C00A9A13B /* SCBViewController.m in Sources */,
 				809D5E3A2151E8EE00AE55E9 /* SCBaseTableView.m in Sources */,
+				802AB45921532AA50027353D /* SCBaseDataSource.m in Sources */,
+				802AB45D21536B520027353D /* SCACell.m in Sources */,
 				807AA2062150CDE0003050BA /* SCBaseTabBarViewController.m in Sources */,
 				808B2A80214F891700A9A13B /* SCBaseNavigationController.m in Sources */,
 				808B2A71214F772600A9A13B /* main.m in Sources */,
+				802AB46221536BAE0027353D /* SCBCell.m in Sources */,
 				807AA20C2150DE49003050BA /* SCDViewController.m in Sources */,
 				808B2A7D214F88D300A9A13B /* SCAViewController.m in Sources */,
 				808B2A63214F772400A9A13B /* AppDelegate.m in Sources */,

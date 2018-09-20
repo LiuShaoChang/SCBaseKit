@@ -11,16 +11,16 @@
 NS_ASSUME_NONNULL_BEGIN
 typedef NSString * nibNamed;
 typedef NSString * classNamed;
-typedef NSString * cellReuseIdentifier;
+typedef NSString * reuseIdentifier;
 
 @interface SCBaseTableView : UITableView
 
 #pragma mark - subclass call
-- (void)registerNibsWithCellReuseIdentifiers:(NSDictionary<nibNamed, cellReuseIdentifier> *)registParameters;
-- (void)registerClassesWithCellReuseIdentifiers:(NSDictionary<classNamed, cellReuseIdentifier> *)registParameters;
+- (void)registerNibsWithCellReuseIdentifiers:(NSDictionary<reuseIdentifier, nibNamed> *)registParameters;
+- (void)registerClassesWithCellReuseIdentifiers:(NSDictionary<reuseIdentifier, classNamed> *)registParameters;
 
-- (void)registerNibsWithHeaderFooterViewReuseIdentifiers:(NSDictionary<nibNamed, cellReuseIdentifier> *)registParameters;
-- (void)registerClassesWithHeaderFooterViewReuseIdentifiers:(NSDictionary<classNamed, cellReuseIdentifier> *)registParameters;
+- (void)registerNibsWithHeaderFooterViewReuseIdentifiers:(NSDictionary<reuseIdentifier, nibNamed> *)registParameters;
+- (void)registerClassesWithHeaderFooterViewReuseIdentifiers:(NSDictionary<reuseIdentifier, classNamed> *)registParameters;
 
 @end
 
