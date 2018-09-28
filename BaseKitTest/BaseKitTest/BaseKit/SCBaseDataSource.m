@@ -49,8 +49,15 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:self.cellIdentifiers[indexPath.section] forIndexPath:indexPath];
-    CellConfigBlock block = self.cellConfigBlocks[indexPath.section];
+    UITableViewCell *cell;
+    CellConfigBlock block;
+    if (self.cellIdentifiers.count == 1) {
+        cell = [tableView dequeueReusableCellWithIdentifier:_cellIdentifiers[0] forIndexPath:indexPath];
+        block = self.cellConfigBlocks[0];
+    }else {
+        cell = [tableView dequeueReusableCellWithIdentifier:self.cellIdentifiers[indexPath.section] forIndexPath:indexPath];
+        block = self.cellConfigBlocks[indexPath.section];
+    }
     id item = [self itemAtIndexPath:indexPath];
     block(cell, item, indexPath);
     return cell;

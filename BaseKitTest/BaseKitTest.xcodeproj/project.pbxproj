@@ -12,6 +12,10 @@
 		802AB45E21536B520027353D /* SCACell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 802AB45C21536B520027353D /* SCACell.xib */; };
 		802AB46221536BAE0027353D /* SCBCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 802AB46021536BAE0027353D /* SCBCell.m */; };
 		802AB46321536BAE0027353D /* SCBCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 802AB46121536BAE0027353D /* SCBCell.xib */; };
+		805B12FC215DC71D005D0A0A /* SCSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 805B12FB215DC71D005D0A0A /* SCSettingViewController.m */; };
+		805C1AEC215C6E0B00F4929B /* SCBaseSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 805C1AEB215C6E0B00F4929B /* SCBaseSettingItem.m */; };
+		805C1AEF215C9EA200F4929B /* SCBaseSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 805C1AEE215C9EA200F4929B /* SCBaseSettingViewController.m */; };
+		805C1AF2215CD9C100F4929B /* SCBaseSettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 805C1AF1215CD9C100F4929B /* SCBaseSettingTableViewCell.m */; };
 		807AA2032150CAC7003050BA /* SCCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 807AA2022150CAC7003050BA /* SCCViewController.m */; };
 		807AA2062150CDE0003050BA /* SCBaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 807AA2052150CDE0003050BA /* SCBaseTabBarViewController.m */; };
 		807AA2092150DC9C003050BA /* SCTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 807AA2082150DC9C003050BA /* SCTabViewController.m */; };
@@ -37,6 +41,14 @@
 		802AB45F21536BAE0027353D /* SCBCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCBCell.h; sourceTree = "<group>"; };
 		802AB46021536BAE0027353D /* SCBCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCBCell.m; sourceTree = "<group>"; };
 		802AB46121536BAE0027353D /* SCBCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCBCell.xib; sourceTree = "<group>"; };
+		805B12FA215DC71D005D0A0A /* SCSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCSettingViewController.h; sourceTree = "<group>"; };
+		805B12FB215DC71D005D0A0A /* SCSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCSettingViewController.m; sourceTree = "<group>"; };
+		805C1AEA215C6E0B00F4929B /* SCBaseSettingItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCBaseSettingItem.h; sourceTree = "<group>"; };
+		805C1AEB215C6E0B00F4929B /* SCBaseSettingItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCBaseSettingItem.m; sourceTree = "<group>"; };
+		805C1AED215C9EA200F4929B /* SCBaseSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCBaseSettingViewController.h; sourceTree = "<group>"; };
+		805C1AEE215C9EA200F4929B /* SCBaseSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCBaseSettingViewController.m; sourceTree = "<group>"; };
+		805C1AF0215CD9C100F4929B /* SCBaseSettingTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCBaseSettingTableViewCell.h; sourceTree = "<group>"; };
+		805C1AF1215CD9C100F4929B /* SCBaseSettingTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCBaseSettingTableViewCell.m; sourceTree = "<group>"; };
 		807AA2012150CAC7003050BA /* SCCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCViewController.h; sourceTree = "<group>"; };
 		807AA2022150CAC7003050BA /* SCCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCViewController.m; sourceTree = "<group>"; };
 		807AA2042150CDE0003050BA /* SCBaseTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCBaseTabBarViewController.h; sourceTree = "<group>"; };
@@ -76,6 +88,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		805C1AE9215C66C200F4929B /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				805C1AEA215C6E0B00F4929B /* SCBaseSettingItem.h */,
+				805C1AEB215C6E0B00F4929B /* SCBaseSettingItem.m */,
+				805C1AED215C9EA200F4929B /* SCBaseSettingViewController.h */,
+				805C1AEE215C9EA200F4929B /* SCBaseSettingViewController.m */,
+				805C1AF0215CD9C100F4929B /* SCBaseSettingTableViewCell.h */,
+				805C1AF1215CD9C100F4929B /* SCBaseSettingTableViewCell.m */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
 		808B2A55214F772400A9A13B = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +130,8 @@
 				807AA2022150CAC7003050BA /* SCCViewController.m */,
 				807AA20A2150DE49003050BA /* SCDViewController.h */,
 				807AA20B2150DE49003050BA /* SCDViewController.m */,
+				805B12FA215DC71D005D0A0A /* SCSettingViewController.h */,
+				805B12FB215DC71D005D0A0A /* SCSettingViewController.m */,
 				802AB45A21536B520027353D /* SCACell.h */,
 				802AB45B21536B520027353D /* SCACell.m */,
 				802AB45C21536B520027353D /* SCACell.xib */,
@@ -136,6 +163,7 @@
 				809D5E392151E8EE00AE55E9 /* SCBaseTableView.m */,
 				802AB45721532AA50027353D /* SCBaseDataSource.h */,
 				802AB45821532AA50027353D /* SCBaseDataSource.m */,
+				805C1AE9215C66C200F4929B /* Setting */,
 			);
 			path = BaseKit;
 			sourceTree = "<group>";
@@ -214,10 +242,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				808B2A7A214F77D400A9A13B /* SCBaseViewController.m in Sources */,
+				805C1AEC215C6E0B00F4929B /* SCBaseSettingItem.m in Sources */,
 				807AA2032150CAC7003050BA /* SCCViewController.m in Sources */,
 				807AA2092150DC9C003050BA /* SCTabViewController.m in Sources */,
+				805C1AF2215CD9C100F4929B /* SCBaseSettingTableViewCell.m in Sources */,
 				808B2A83214F8A8C00A9A13B /* SCBViewController.m in Sources */,
 				809D5E3A2151E8EE00AE55E9 /* SCBaseTableView.m in Sources */,
+				805C1AEF215C9EA200F4929B /* SCBaseSettingViewController.m in Sources */,
 				802AB45921532AA50027353D /* SCBaseDataSource.m in Sources */,
 				802AB45D21536B520027353D /* SCACell.m in Sources */,
 				807AA2062150CDE0003050BA /* SCBaseTabBarViewController.m in Sources */,
@@ -227,6 +258,7 @@
 				807AA20C2150DE49003050BA /* SCDViewController.m in Sources */,
 				808B2A7D214F88D300A9A13B /* SCAViewController.m in Sources */,
 				808B2A63214F772400A9A13B /* AppDelegate.m in Sources */,
+				805B12FC215DC71D005D0A0A /* SCSettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 #import "SCCViewController.h"
+#import "SCSettingViewController.h"
 
 @interface SCCViewController ()
 
@@ -18,6 +19,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pushNext)];
+    [self.view addGestureRecognizer:tap];
+    
+}
+
+- (void)pushNext {
+    SCSettingViewController *settingVC = [[SCSettingViewController alloc] init];
+    [self.navigationController pushViewController:settingVC animated:YES];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
